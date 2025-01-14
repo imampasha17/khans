@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-dashboard">
+        <header>
+            <h1>Admin Dashboard</h1>
+            <p>Manage Products and Update Data</p>
+        </header>
+        <div class="form-container">
+            <h2>Add Product</h2>
+            <form id="productForm">
+                <input type="text" id="productName" placeholder="Product Name" required>
+                <input type="number" id="productTarget" placeholder="Target" required>
+                <input type="number" id="productAchieved" placeholder="Achieved" required>
+                <input type="number" id="productIncentive" placeholder="Incentive" required>
+                <button type="submit">Add Product</button>
+            </form>
+        </div>
+        <div class="product-table-container">
+            <h2>Product List</h2>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Target</th>
+                        <th>Achieved</th>
+                        <th>Incentive</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody">
+                    <!-- Dynamic Rows Will Be Added Here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
