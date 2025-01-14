@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55); /* Dark blue gradient */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Viewer Dashboard Container */
+.viewer-dashboard {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3); /* Pink gradient */
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Product Table */
+.product-table-container {
+    margin-top: 20px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product-table th, .product-table td {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.product-table th {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5); /* Blue gradient */
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.product-table td {
+    font-size: 0.9rem;
+}
+
+.product-table tr:hover td {
+    background: linear-gradient(135deg, #5b86e5, #36d1dc); /* Hover gradient */
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

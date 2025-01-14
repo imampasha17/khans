@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewer Dashboard</title>
+    <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+    <div class="viewer-dashboard">
+        <header>
+            <h1>Viewer Dashboard</h1>
+            <p>View Products and Their Performance</p>
+        </header>
+        <div class="product-table-container">
+            <h2>Product List</h2>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Target</th>
+                        <th>Achieved</th>
+                        <th>Incentive</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="viewerTableBody">
+                    <!-- Dynamic Rows Will Be Populated Here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="viewer.js"></script>
+</body>
+</html>
